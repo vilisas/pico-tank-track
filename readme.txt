@@ -1,0 +1,23 @@
+Cheap robot track controlled by Raspberry Pi Pico W
+and pca9685 pico motor driver
+
+Driver from https://github.com/adafruit/micropython-adafruit-pca9685
+
+Track: 
+https://www.aliexpress.com/item/1005007809968339.html
+
+4-Channel DC Motor Driver Controller HAT:
+https://www.aliexpress.com/item/1005007930673173.html
+
+Raspberry Pi Pico W
+
+* Wiring *
+
+Left track:
+A1      Motor +
+A2      Motor -
+
+Right track:
+B1:     Motor +
+B2:     Motor -
+
