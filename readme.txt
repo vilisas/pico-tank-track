@@ -21,5 +21,18 @@ Right track:
 B1:     Motor +
 B2:     Motor -
 
+ELRS:
+GPIO1: TX (connect to receiver's RX)
+GPIO2: RX (connect to receiver's TX)
+Protocol CRSF
+Baudrate: 420000
+
 
 upload pca9685.py to rpi board, then execute motor_driver.py
+
+Channel configuration:
+
+CH1: Yaw
+CH3: Throttle
+CH5: Arm / Disarm (move sticks to center to arm)
+
