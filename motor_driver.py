@@ -2,7 +2,7 @@ from machine import Pin, I2C
 from pca9685 import PCA9685
 import time
 
-RESOLUTION = 2<<11  # 12-bit resolution for PCA9685
+RESOLUTION = (2<<11)-1  # 12-bit resolution for PCA9685
 
 # RESOLUTION  = 4096  # 12-bit resolution for PCA9685
 TRACK_LEFT  = 0
@@ -78,12 +78,12 @@ if __name__ == "__main__":
         
         # Test motor movement
         try:
-            min_speed = 30
-            max_speed = 70
+            min_speed = 0
+            max_speed = 30
             for speed in range(min_speed, max_speed):
                 set_track_speed(TRACK_LEFT, speed)
                 set_track_speed(TRACK_RIGHT, speed)
-                time.sleep(0.2)
+                time.sleep(0.1)
             for speed in range(max_speed, min_speed, -1):
                 set_track_speed(TRACK_LEFT, speed)
                 set_track_speed(TRACK_RIGHT, speed)

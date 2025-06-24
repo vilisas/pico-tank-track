@@ -21,3 +21,5 @@ Right track:
 B1:     Motor +
 B2:     Motor -
 
+
+upload pca9685.py to rpi board, then execute motor_driver.py
